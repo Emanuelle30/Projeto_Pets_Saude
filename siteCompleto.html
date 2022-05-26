@@ -15,12 +15,12 @@
             height: 40px;
         }
     </style>
-    <title>Olá, mundo!</title>
+    <title>Pets, Saúde e Bem-estar!</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <a class="navbar-brand" href="#">Pets_Saúde</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
             aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -31,28 +31,28 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Artigos</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Fale Conosco</a>
+                </li>
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        Redes Sociais
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Ação</a>
-                        <a class="dropdown-item" href="#">Outra ação</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        <a class="dropdown-item text-success" href="https://github.com/Emanuelle30" target="_blank">GitHub</a>
+                        <a class="dropdown-item text-success" href="https://www.linkedin.com/in/30emanuellecavalcante/" target="_blank">LinkedIn</a>
+                        
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Desativado</a>
-                </li>
+  
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
             </form>
         </div>
     </nav>
@@ -197,43 +197,34 @@
         </div>
         <!--/Texto e Video-->
         <!--Formulário de Contato-->
-        <div class="row">
-            <div class="col-md-12">
-                <h4 class="text-center">Entre em contato com a gente</h4>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <h4 class="text-center mb-3">Entre em contato com a gente</h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
                 <form>
-                    <div class="form-group">
-                      <label for="exampleFormControlInput1">Endereço de email</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="nome">Nome</label>
+                        <input type="text" id="nome" class="form-control" onkeyup="validaNome()">
+                       <div id="txtNome"></div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlSelect1">Select de exemplo</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                    <!-- Email input -->
+                   <div class="form-outline mb-4">
+                        <label class="form-label" for="email">E-mail</label>
+                        <input type="email" id="email" class="form-control" onkeyup="validaEmail()">
+                        <div id="txtEmail"></div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlSelect2">Exemplo de select múltiplo</label>
-                      <select multiple class="form-control" id="exampleFormControlSelect2">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                    <!-- Mensagem input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="assunto">Assunto</label>
+                        <textarea class="form-control" name="assunto" id="assunto" rows="4" onkeyup="validaAssunto()" required></textarea>
+                        <div id="txtAssunto"></div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                  </form>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4" onclick="enviar()">Enviar</button>
+                </form>
             </div>
         </div>
         <!--/Formulário de Contato-->
@@ -243,29 +234,29 @@
         <footer>
             <div class="row mb-1">
                 <div class="col-md-12 d-flex justify-content-center">
-                    
-                        <a href="https://github.com/Emanuelle30" class="p-3"> 
-                            <img class= "tm-social" src="assets/icones/github.png" alt="Logo do Github">
-                        </a>
-                        <a href="https://www.linkedin.com/in/30emanuellecavalcante/" class="p-3">
-                            <img class="tm-social" src="assets/icones/linkedin.png" alt="Logo do linkedIn">
-                        </a>
-                        <a href="mailto:emanuelle.cavalcante4@gmail.com" class="p-3">
-                            <img class="tm-social" src="assets/icones/gmail.png" alt="Logo do Gmail">
-                        </a>
-                    </div>
+
+                    <a href="https://github.com/Emanuelle30" class="p-3" target="_blank">
+                        <img class="tm-social" src="assets/icones/github.png" alt="Logo do Github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/30emanuellecavalcante/" class="p-3" target="_blank">
+                        <img class="tm-social" src="assets/icones/linkedin.png" alt="Logo do linkedIn">
+                    </a>
+                    <a href="mailto:emanuelle.cavalcante4@gmail.com" class="p-3" target="_blank">
+                        <img class="tm-social" src="assets/icones/gmail.png" alt="Logo do Gmail">
+                    </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center">
-                        Todos os direitos reservados: Emanuelle Cavalcante &copy;
-                    </p>
-                </div>
-            </div>
-         
-        </footer>
-        <!--/Rodapé-->
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text-center">
+                Todos os direitos reservados: Emanuelle Cavalcante &copy;
+            </p>
+        </div>
+    </div>
+
+    </footer>
+    <!--/Rodapé-->
     </div>
 
 
@@ -279,6 +270,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+ 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
