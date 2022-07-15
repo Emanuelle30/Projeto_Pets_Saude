@@ -5,56 +5,41 @@
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap-CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style>
-        .tm-social {
-            width: 40px;
-            height: 40px;
-        }
-    </style>
-    <title>Pets, Saúde e Bem-estar!</title>
+    <!-- Style-CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Portifólio - Emanuelle Cavalcante</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
-        <a class="navbar-brand" href="#">Pets_Saúde</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--NavBar-->
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Artigos</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Fale Conosco</a>
-                </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Redes Sociais
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-success" href="https://github.com/Emanuelle30" target="_blank">GitHub</a>
-                        <a class="dropdown-item text-success" href="https://www.linkedin.com/in/30emanuellecavalcante/" target="_blank">LinkedIn</a>
-                        
-                    </div>
-                </li>
-  
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
+
+    <!--NavBar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="marcaLogo">
+            <img src="assets/img/marcalogo-remove.png" alt="logo_Emanuelle" width="80% ">
         </div>
+
+        <div class="collapse navbar-collapse nav-list" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Projetos <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Tecnologias</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Linha do Tempo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>             
+            </ul>
+        </div>
+
     </nav>
     <!--/NavBar-->
     <!--Carrossel-->
@@ -208,10 +193,10 @@
                     <div class="form-outline mb-4">
                         <label class="form-label" for="nome">Nome</label>
                         <input type="text" id="nome" class="form-control" onkeyup="validaNome()">
-                       <div id="txtNome"></div>
+                        <div id="txtNome"></div>
                     </div>
                     <!-- Email input -->
-                   <div class="form-outline mb-4">
+                    <div class="form-outline mb-4">
                         <label class="form-label" for="email">E-mail</label>
                         <input type="email" id="email" class="form-control" onkeyup="validaEmail()">
                         <div id="txtEmail"></div>
@@ -219,7 +204,8 @@
                     <!-- Mensagem input -->
                     <div class="form-outline mb-4">
                         <label class="form-label" for="assunto">Assunto</label>
-                        <textarea class="form-control" name="assunto" id="assunto" rows="4" onkeyup="validaAssunto()" required></textarea>
+                        <textarea class="form-control" name="assunto" id="assunto" rows="4" onkeyup="validaAssunto()"
+                            required></textarea>
                         <div id="txtAssunto"></div>
                     </div>
                     <!-- Submit button -->
@@ -270,8 +256,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
- 
-    <script src="assets/js/script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
