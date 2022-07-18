@@ -37,67 +37,505 @@
     <!--Jumbotron-->
     <div class="jumbotron d-flex">
         <div class="col-8 justify-content-start text-center">
-        <h1 class="display-4 text-white mt-4 p-3">Olá, seja bem vind*!</h1>
-        <p class="lead text-white p-3">Eu sou a Emanuelle Cavalcante, Dev. Full Stack Jr e este é o meu portifólio.</p>        
-        <a class="btn btn-neon btn-lg" href="#" role="button">Sobre mim...</a>
-    </div>
+            <h1 class="display-4 text-white mt-4 p-3">Olá, seja bem vind*!</h1>
+            <h3 class="text-white p-3">Eu sou a Emanuelle Cavalcante, Dev. Full Stack Jr e este é o meu portifólio.</h3>
+            <a class="btn btn-neon btn-lg" href="#" role="button">Sobre mim...</a>
+        </div>
         <div class="col-9 justify-content-end">
             <img class="avatar" src="/assets/img/Avatar-Emanuelle.png" alt="Avatar-Emanuelle">
         </div>
-      
-      </div>
+
+    </div>
     <!--/Jumbotron-->
     <hr>
     <!--Carrossel-->
-    <br>
-    <br>
-    <br>
-    
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-9">
+                <h1 class="p-title">Tecnologias que possuo conhecimento . . .</h1>
             </div>
         </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-9 borda">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Java</h5>
+                                        <p>Java é uma linguagem de programação e um ambiente computacional criado pela
+                                            Sun Microsystems na década de 90, sendo posteriormente adquirido pela
+                                            Oracle. Como linguagem de programação, o código Java é baseado em classes e
+                                            orientado a objetos, com foco em segurança, portabilidade e alto desempenho.
+                                        </p>
+                                        <p> Devido à possibilidade de escrever o código apenas uma vez e rodá-lo em
+                                            diferentes dispositivos, a tecnologia logo se tornou popular, passando a ser
+                                            implementada em praticamente qualquer lugar, desde sites e computadores até
+                                            datacenters, celulares, calculadoras, videogames, etc.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Spring</h5>
+                                        <p> O Spring é um framework open source (código aberto) para a plataforma Java,
+                                            tendo sido criado por Rod Johnson. Trata-se de um framework não intrusivo,
+                                            baseado nos padrões de projeto inversão de controle (Inversion of Control ou
+                                            IoC) e injeção de dependência, oferecendo diversos módulos para ser
+                                            utilizado.
+                                        </p>
+                                        <p> No Spring o container se encarrega de "instanciar" as classes de uma
+                                            aplicação Java e definir as dependências entre elas por meio de um arquivo
+                                            de configuração em formato XML. Dessa forma o framework Spring permite o
+                                            baixo acoplamento entre classes de uma aplicação orientada a objetos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mysql</h5>
+                                        <p>O MySQL é um sistema de gerenciamento de banco de dados (SGBD), que utiliza a
+                                            linguagem SQL (Linguagem de Consulta Estruturada, do inglês Structured Query
+                                            Language) como interface. É atualmente um dos sistemas de gerenciamento de
+                                            bancos de dados mais populares da Oracle Corporation.</p>
+                                        <p>Foi criado na Suécia por David Axmark, Allan Larsson e Michael Widenius.
+                                            Hoje seu desenvolvimento e manutenção empregam aproximadamente 400
+                                            profissionais no mundo inteiro, e mais de mil contribuem testando o
+                                            software, integrando-o a outros produtos, e escrevendo a respeito dele.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Heroku</h5>
+                                        <p>A Heroku é uma plataforma nuvem que faz deploy de várias aplicações back-end
+                                            seja para hospedagem, testes em produção ou escalar as suas aplicações.
+                                            Também tem integração com o GitHub, deixando o uso mais fácil e com
+                                            containers denominados Dyno.</p>
+                                        <p>Muitos preferem utilizar essa plataforma devido a quantidade de serviços que
+                                            a heroku suporta. Por ser simples, desenvolvedores, equipes e empresas de
+                                            todos os tamanhos usam a Heroku para implantar, gerenciar e dimensionar
+                                            suas aplicações.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Angular</h5>
+                                        <p> O Angular é um framework de código aberto usado para construir aplicativos
+                                            para web baseados em uma única página dinâmica. Os desenvolvedores também
+                                            usam essa ferramenta para criar menus animados para as páginas de internet
+                                            baseadas em HTML.
+                                        </p>
+                                        <p>Angular é um conceito de Misko Hevery e Adam Abrons, engenheiros
+                                            da Google. A empresa lançou a primeira versão do Angular JS em 2012 e tem
+                                            mantido o serviço ativo desde então com atualizações e melhorias,
+                                            simplificando a construção de interfaces e o desenvolvimento de
+                                            aplicações client-side.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">VSCode</h5>
+                                        <p>O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft
+                                            para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de
+                                            versionamento Git incorporado, realce de sintaxe, complementação inteligente
+                                            de código, snippets e refatoração de código.
+                                        </p>
+                                        <p>O Visual Studio Code é extensível e personalizável, permitindo que os
+                                            usuários possam mudar o tema do editor, teclas de atalho e preferências. Ele
+                                            é um software livre e de código aberto, apesar do download oficial estar sob
+                                            uma licença proprietária.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Typescript</h5>
+                                        <p> O TypeScript é uma linguagem de código aberto (Open source) desenvolvida
+                                            pela Microsoft
+                                            que foi derivada do JavaScript. Funcionando como um conjunto de ferramentas
+                                            e formas para adicionar recursos de tipagem estáticas à linguagem original.
+                                        </p>
+                                        <p>Com o TypeScript é possível desenvolver códigos mais claros e eficientes.
+                                            Dessa forma, é possível executar as linhas de código dessa linguagem em
+                                            navegadores que suportem o ECMAScript 3 ou até mesmo em softwares, como o
+                                            Node.Js, dando-lhe melhor ferramentagem em qualquer escala.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HTML5</h5>
+                                        <p> O HTML (Hypertext Markup Language) é uma linguagem de marcação de hipertexto
+                                            utilizada para apresentar e estruturar o conteúdo na web. Foi criado em
+                                            1991, por Tim Berners-Lee, no CERN (European Council for Nuclear Research)
+                                            na suíça.
+                                        </p>
+                                        <p>Inicialmente o HTML foi projetado para interligar instituições de pesquisa
+                                            próximas, e compartilhar documentos com facilidade. Hoje o HTML5, traz novas
+                                            funções como as tags vídeo, áudio e elemento canvas e será o novo padrão
+                                            para HTML, XHTML e HTML DOM. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CSS3</h5>
+                                        <p>CSS é a sigla para Cascading Style
+                                            Sheets (ou Folha de Estilos em Cascata, em tradução livre). Trata-se de uma
+                                            linguagem de formatação de conteúdo muito utilizada em conjunto com o HTML
+                                            na construção de páginas da internet, sendo responsável pelo “visual” do
+                                            site.
+                                        </p>
+                                        <p>O CSS foi desenvolvido em meados da década de 90 para solucionar um problema
+                                            criado pela expansão da própria internet. Com a popularização da rede, as
+                                            páginas foram ficando cada vez mais complexas, e os recursos do HTML já não
+                                            eram mais suficientes para atender às necessidades dos desenvolvedores.</p>
 
-        <div class="row justify-content-end">
-            <div class="col-6">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100"
-                    src="https://th.bing.com/th/id/R.c665a3287c226be866aa34f4cbc0b7d2?rik=GPVyZDMgwisV1Q&pid=ImgRaw&r=0"
-                    alt="Primeiro Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100"
-                    src="https://wallpapersmug.com/download/1280x720/505954/wildlife-tiger-predator-animal.jpg"
-                    alt="Segundo Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100"
-                    src="https://f.vividscreen.info/soft/e2a3e77c6232ec276955dd7ec1845c44/Wild-Siberian-Tiger-1280x720.jpg"
-                    alt="Terceiro Slide">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">NodeJs</h5>
+                                        <p>O Node.js pode ser definido como um ambiente de execução Javascript
+                                            server-side. Isso significa que com o Node.js é possível criar aplicações
+                                            Javascript para rodar como uma aplicação standalone em uma máquina, não
+                                            dependendo de um browser para a execução, como estamos acostumados.
+                                        </p>
+                                        <p>Node.js é um software de código aberto, multiplataforma, baseado no
+                                            interpretador V8 do Google e que permite a execução de códigos JavaScript
+                                            fora de um navegador web. Apesar de recente, o Node.js já é utilizado por
+                                            grandes empresas no mercado de tecnologia, como Netflix, Uber e LinkedIn.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Javascript</h5>
+                                        <p>O JavaScript é uma linguagem de programação interpretada criada em meados da
+                                            década de 90 pela Netscape Communications. Seu objetivo era atender à
+                                            demanda por sites mais interativos e dinâmicos, já que, até então, as
+                                            páginas HTML tinham pouca ou nenhuma interatividade.
+                                        </p>
+                                        <p>É uma linguagem, versátil, com tipagem dinâmica, sintaxe acessível, e
+                                            recursos avançados como orientação a objetos e APIs para trabalhar com
+                                            textos, matrizes, datas e expressões regulares. Segue as
+                                            especificações ECMAScript, que visam garantir suporte e funcionamento entre
+                                            os diferentes navegadores.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap</h5>
+                                        <p>O Bootstrap nada mais é que um framework Front End utilizado por milhares de
+                                            desenvolvedores web pelo mundo. A partir dele, muitas etapas do
+                                            desenvolvimento web se tornam mais rápidas e dinâmicas, pois já trazem
+                                            consigo diversos elementos prontos e estilizados.</p>
+
+                                        <p>O Bootstrap é uma ferramenta gratuita para desenvolvimento HTML, CSS e JS.
+                                            Portanto, é uma ferramenta de código fonte aberto (Open source) para todos.
+                                            Contudo, hoje em dia, é o framework Front End mais conhecido e mais
+                                            utilizado pelo mundo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Git</h5>
+                                        <p> Git é um sistema de controle de versões distribuído, usado principalmente no
+                                            desenvolvimento de software, mas pode ser usado para registrar o histórico
+                                            de edições de qualquer tipo de arquivo (Exemplo: alguns livros digitais são
+                                            disponibilizados no GitHub e escrito aos poucos publicamente).
+                                        </p>
+                                        <p>O Git foi inicialmente projetado e desenvolvido por Linus Torvalds para o
+                                            desenvolvimento do kernel Linux. Cada diretório de trabalho do Git é um
+                                            repositório com um histórico completo e habilidade total de acompanhamento
+                                            das revisões, não dependente de acesso a uma rede ou a um servidor central.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel" src="/assets/icones/postman.png"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Postman</h5>
+                                        <p>O Postman é um serviço gratuito criado em 2012 pela Postdot Technologies e
+                                            desde então seu uso cresceu exponencialmente. Hoje, mais de 5 milhões de
+                                            devs ao redor do mundo utilizam esse serviço. Surgiu como uma extensão do
+                                            Chrome e em 2014 foram lançados os apps nativos de cada plataforma.
+                                        </p>
+                                        <p>Postman é uma ferramenta criada para testar e desenvolver APIs (Application
+                                            Programming Interface). O grande diferencial é a interface mais limpa, que
+                                            faz com que a usabilidade seja muito boa, proporcionando agilidade e
+                                            eficiência no dia a dia do desenvolvedor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item card-carousel">
+                            <div class="card-tech">
+                                <div class="row-col-md-6">
+                                    <img class="img-carousel" src="/assets/icones/swagger-removebg-preview.png"
+                                        alt="Imagem de capa do card">
+                                </div>
+                                <div class="row-col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Swagger</h5>
+                                        <p>Swagger é uma das ferramentas mais utilizadas para o desenvolvimento de Open
+                                            API Specification (OAS). Auxiliando os desenvolvedores a definir, criar,
+                                            documentar e consumir APIs REST. Sendo composto por um arquivo de
+                                            configuração, que pode ser definido em YAML ou JSON.
+                                        </p>
+                                        <p>Swagger permite que você descreva a estrutura de APIs de uma forma facilitada
+                                            onde é possível a interpretação tanto por humanos quanto por máquinas. O
+                                            Swagger consegue ler a estrutura da sua API e gerar automaticamente uma
+                                            documentação ou ler a documentação e gerar uma API.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
     </div>
-</div>
-</div>
-</div>
-
     <!--/Carrossel-->
+    <hr>
+    <!--Card-Projetos-->
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="p-title">Meus projetos . . . </h1>
+            </div>
+        </div>
+        <div class="row cd-linha">
+            <div class="col-md-4">
+                <div class="card-proj" style="width: 18rem;">
+                    <img class="img-proj" src="/assets/img/em-breve.png" alt="Imagem de capa do card">
+                    <div class="card-body2">
+                        <h5 class="card-title2">Nome do projeto</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o Nome do projeto e fazer
+                            preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-proj">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-proj" style="width: 18rem;">
+                    <img class="img-proj" src="/assets/img/em-breve.png" alt="Imagem de capa do card">
+                    <div class="card-body2">
+                        <h5 class="card-title2">Nome do projeto</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o Nome do projeto e fazer
+                            preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-proj">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-proj" style="width: 18rem;">
+                    <img class="img-proj" src="/assets/img/em-breve.png" alt="Imagem de capa do card">
+                    <div class="card-body2">
+                        <h5 class="card-title2">Nome do projeto</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o Nome do projeto e fazer
+                            preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-proj">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cd-linha">
+            <div class="col-md-4">
+                <div class="card-proj" style="width: 18rem;">
+                    <img class="img-proj" src="/assets/img/em-breve.png" alt="Imagem de capa do card">
+                    <div class="card-body2">
+                        <h5 class="card-title2">Nome do projeto</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o Nome do projeto e fazer
+                            preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-proj">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-proj" style="width: 18rem;">
+                    <img class="img-proj" src="/assets/img/em-breve.png" alt="Imagem de capa do card">
+                    <div class="card-body2">
+                        <h5 class="card-title2">Nome do projeto</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o Nome do projeto e fazer
+                            preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-proj">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-proj" style="width: 18rem;">
+                    <img class="img-proj" src="/assets/img/em-breve.png" alt="Imagem de capa do card">
+                    <div class="card-body2">
+                        <h5 class="card-title2">Nome do projeto</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o Nome do projeto e fazer
+                            preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-proj text-lilas">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Card-Projetos-->
+    <hr>
+    <br>
+    <!--Linha do tempo-->
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="p-title">Linha do Tempo </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--/Linha do tempo-->
+    <hr>
+    <br>
+    <!--Rodapé-->
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="p-title">Contato</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--/Rodapé-->
+
+
 
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -111,7 +549,7 @@
         crossorigin="anonymous"></script>
 
     <script src="menuResponsi.js"></script>
-    
+
 
 </body>
 
