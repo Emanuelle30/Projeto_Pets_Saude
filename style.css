@@ -317,3 +317,199 @@ nav {
     color: var(--bg-pink);
     animation: brilho 15s infinite ease-in-out;
 }
+
+/* Estilos linha do tempo */
+
+.img-linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: 14%;
+}
+
+/* Estilos contato */
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: var(--bg-profundo);
+    color: var(--bg-lilas);
+}
+
+.rodape {
+    display: flex;
+
+}
+
+.rodape .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .elements {
+    margin: 10px 0 0 0;
+    position: relative;
+}
+
+.box .elements:after {
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background: var(--bg-white);
+    top: -10px;
+}
+
+.box .elements:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: var(--bg-profundo);
+    top: -10px;
+}
+
+.left .elements a span {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-profundo);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.left .elements p {
+    text-align: justify;
+    color: var(--bg-lilas);
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 50px;
+    margin: 10% 20% 15% 20%;
+}
+
+.h:hover {
+    color: var(--bg-white);
+    transition: 0.5s;
+    text-shadow: 0 0 20px var(--bg-roxo), 0 0 5px var(--bg-lilas);
+}
+
+.center .elements .fas {
+    font-size: 23px;
+    background: var(--bg-white);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .elements .fas:hover {
+    background: var(--bg-pink);
+}
+
+.center .elements .text {
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .elements .phone {
+    margin: 10px 0;
+}
+
+.center .elements .msg {
+    margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+    width: 100%;
+    font-size: 17px;
+    background: var(--bg-white);
+    padding-left: 10px;
+    border: 1px solid var(--bg-white);
+}
+
+.right form input {
+    height: 25px;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+    outline-color: var(--bg-pink);
+}
+
+.right form .text {
+    font-size: 17px;
+    margin-bottom: 2px;
+    color: var(--bg-white);
+}
+
+.right form .btn {
+    margin-top: 2px;
+}
+
+.right form .btn button {
+    height: 40px;
+    width: 100%;
+    background: var(--bg-roxo);
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.right form .btn button:hover {
+    background: var(--bg-pink);
+}
+
+.bottom .center {
+    padding: 5px;
+    font-size: 15px;
+    background: var(--bg-roxo);
+    text-align: center;
+}
+
+.bottom .center span {
+    color: var(--bg-white);
+}
+
+.bottom .center a {
+    color: var(--bg-white);
+    text-decoration: none;
+}
+
+.bottom .center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .rodape {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .rodape .box {
+        margin: 5px 0;
+    }
+}
